@@ -1,20 +1,39 @@
 // autoclicker.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include <iostream>
+#include <iostream> // Main stuff for CPP
+#include <Windows.h> // This helps me use inputs
+
+// MAIN KEYBINDS
+// LCTRL + ESC     | CLOSES PROGRAM
+// LCTRL + RCTRL   | STARTS CLICKING
+
+int ClickAmount = 10;                                                    // 10 clicks per event!!! | 10 Comes out to about 46.2 clicks per second
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    while (true)
+    {
+        Sleep(50);                                                       // Allows up to 20 events per second.
+
+        if (GetAsyncKeyState(VK_LCONTROL) & GetAsyncKeyState(VK_ESCAPE))
+        {
+            return 0;
+        }
+        if (GetAsyncKeyState(VK_LCONTROL) & GetAsyncKeyState(VK_RCONTROL))
+        {
+            INPUT click = { 0 };                                         // This creates an event that will be used to push out a command to the OS
+            for (int i = 0; i <= ClickAmount; i++)                       // This loops until we reach the desired amount of clicks during this event
+            {
+                click.type = INPUT_MOUSE;                                // The input type is a mouse input.
+                click.mi.dwFlags = MOUSEEVENTF_LEFTDOWN;                 // Mouse input type is a mouse left button down
+                SendInput(1, &click, sizeof(click));                     // Send the input over to the OS
+                ZeroMemory(&click, sizeof(click));                       // Use this so there arent any input errors when we do a mouse up | removes all attributes that were previously set
+
+                click.type = INPUT_MOUSE;                                // The input type is a mouse input.
+                click.mi.dwFlags = MOUSEEVENTF_LEFTUP;                   // Mouse input type is a mouse left button up
+                SendInput(1, &click, sizeof(click));                     // Send the input over to the OS
+            }
+        }
+    }
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
