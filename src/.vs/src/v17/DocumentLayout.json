@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{CE9FFAA8-0C39-42D2-8B1A-00446C0F717D}|src.vcxproj|C:\\Users\\Alex\\Desktop\\Programming\\C\u002B\u002B\\AUTOCLICKER\\Autoclicker w\\gui\\src\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{CE9FFAA8-0C39-42D2-8B1A-00446C0F717D}|src.vcxproj|solutionrelative:Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE9FFAA8-0C39-42D2-8B1A-00446C0F717D}|src.vcxproj|C:\\Users\\Alex\\Desktop\\Programming\\C\u002B\u002B\\AUTOCLICKER\\Autoclicker w\\gui\\src\\CustomItems.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CE9FFAA8-0C39-42D2-8B1A-00446C0F717D}|src.vcxproj|solutionrelative:CustomItems.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomItems.h",
+              "DocumentMoniker": "C:\\Users\\Alex\\Desktop\\Programming\\C\u002B\u002B\\AUTOCLICKER\\Autoclicker w\\gui\\src\\CustomItems.h",
+              "RelativeDocumentMoniker": "CustomItems.h",
+              "ToolTip": "C:\\Users\\Alex\\Desktop\\Programming\\C\u002B\u002B\\AUTOCLICKER\\Autoclicker w\\gui\\src\\CustomItems.h*",
+              "RelativeToolTip": "CustomItems.h*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-08T19:54:58.307Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\Alex\\Desktop\\Programming\\C\u002B\u002B\\AUTOCLICKER\\Autoclicker w\\gui\\src\\Source.cpp",
               "RelativeDocumentMoniker": "Source.cpp",
-              "ToolTip": "C:\\Users\\Alex\\Desktop\\Programming\\C\u002B\u002B\\AUTOCLICKER\\Autoclicker w\\gui\\src\\Source.cpp",
-              "RelativeToolTip": "Source.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Alex\\Desktop\\Programming\\C\u002B\u002B\\AUTOCLICKER\\Autoclicker w\\gui\\src\\Source.cpp*",
+              "RelativeToolTip": "Source.cpp*",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAD4AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-08T01:46:54.585Z",
               "EditorCaption": ""
